@@ -27,3 +27,4 @@ yarn-error.log*
 deploy.sh
 receipt.html
 node_modules
+/dist
