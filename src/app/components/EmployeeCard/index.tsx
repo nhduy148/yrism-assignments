@@ -101,8 +101,8 @@ export const EmployeeCard: React.FC<Props> = ({ employee, onDelete, onClick }) =
       <CardMedia sx={{ aspectRatio: 1 }}>
         <Carousel showThumbs={false} showStatus={false}>
           {portfolioImages.map((image) => (
-            <div key={image.id}>
-              <img src={image.cdnUrl} alt="Employee portfolio" />
+            <div key={image?.id}>
+              <img src={image?.cdnUrl} alt="Employee portfolio" />
             </div>
           ))}
         </Carousel>

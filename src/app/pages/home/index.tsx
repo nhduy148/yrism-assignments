@@ -1,5 +1,5 @@
 import { Search } from '@mui/icons-material';
-import { Box, Button, CircularProgress, Container, Grid, Paper, Stack, TextField } from '@mui/material';
+import { Box, Button, Container, Grid, Paper, Stack, TextField, Typography } from '@mui/material';
 import { EmployeeCard } from 'app/components';
 import { RouterPageKey } from 'app/config';
 import { DEFAULT_PAGINATION_DATA, DEFAULT_PAGINATION_PARAMS } from 'app/constants';
@@ -115,7 +115,11 @@ const HomePage = () => {
           <Grid container spacing={2}>
             {employees.map(renderEmployee)}
           </Grid>
-          <Box ref={ref}>{loading && <CircularProgress sx={{ display: 'block', margin: 'auto' }} />}</Box>
+          <Box ref={ref}>
+            <Typography textAlign="center" variant="caption" py={2} display="block">
+              {loading ? 'Getting more employees...' : 'You are all caught up!'}
+            </Typography>
+          </Box>
         </Box>
       </Paper>
     </Container>

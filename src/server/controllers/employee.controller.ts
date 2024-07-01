@@ -77,18 +77,18 @@ export class EmployeeController {
       const newEmployee: Employee = {
         id: db.chain.get(EMPLOYEE_TABLE).size().value() + 1,
         name: employee.name,
-        positions: employee.positions.map((position, positionIndex) => ({
+        positions: employee.positions?.map?.((position, positionIndex) => ({
           id: Math.random(),
           displayOrder: positionIndex,
           positionResourceId: Number(position.positionResourceId),
-          toolLanguages: position.toolLanguages.map((toolLanguage, toolLanguageIndex) => ({
+          toolLanguages: position.toolLanguages?.map?.((toolLanguage, toolLanguageIndex) => ({
             id: Math.random(),
             displayOrder: toolLanguageIndex,
             from: Number(toolLanguage.from),
             to: Number(toolLanguage.to),
             description: toolLanguage.description,
             toolLanguageResourceId: Number(toolLanguage.toolLanguageResourceId),
-            images: toolLanguage.images.map((_, imageIndex) => ({
+            images: toolLanguage.images?.map?.((_, imageIndex) => ({
               id: Math.random(),
               cdnUrl: 'https://picsum.photos/seed/picsum/600',
               displayOrder: imageIndex,
@@ -117,11 +117,11 @@ export class EmployeeController {
       const newEmployee: Employee = {
         id: db.chain.get(EMPLOYEE_TABLE).size().value() + 1,
         name: employee.name,
-        positions: employee.positions.map((position, positionIndex) => ({
+        positions: employee.positions?.map?.((position, positionIndex) => ({
           id: Math.random(),
           displayOrder: isNaN(Number(position.displayOrder)) ? positionIndex : Number(position.displayOrder),
           positionResourceId: Number(position.positionResourceId),
-          toolLanguages: position.toolLanguages.map((toolLanguage, toolLanguageIndex) => ({
+          toolLanguages: position.toolLanguages?.map?.((toolLanguage, toolLanguageIndex) => ({
             id: Math.random(),
             displayOrder: isNaN(Number(toolLanguage.displayOrder))
               ? toolLanguageIndex
@@ -130,7 +130,7 @@ export class EmployeeController {
             to: Number(toolLanguage.to),
             description: toolLanguage.description,
             toolLanguageResourceId: Number(toolLanguage.toolLanguageResourceId),
-            images: toolLanguage.images.map((image, imageIndex) => ({
+            images: toolLanguage.images?.map?.((image, imageIndex) => ({
               id: image?.id ?? Math.random(),
               cdnUrl: 'https://picsum.photos/seed/picsum/600',
               displayOrder: isNaN(Number(image.displayOrder)) ? imageIndex : Number(image.displayOrder),

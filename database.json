@@ -403,6 +403,27 @@
           ]
         }
       ]
+    },
+    {
+      "id": 11,
+      "name": "Duy Nguyen",
+      "positions": [
+        {
+          "id": 0.7278831106796941,
+          "displayOrder": 0,
+          "positionResourceId": 1,
+          "toolLanguages": [
+            {
+              "id": 0.7736357367002189,
+              "displayOrder": 0,
+              "from": 2021,
+              "to": 2024,
+              "description": "",
+              "toolLanguageResourceId": 1
+            }
+          ]
+        }
+      ]
     }
   ],
   "position_resources": [
