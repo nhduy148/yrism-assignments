@@ -1,7 +1,7 @@
 import { Close } from '@mui/icons-material';
 import { Button, Divider, IconButton, Modal, Paper, Stack, Typography } from '@mui/material';
 import { nanoid } from '@reduxjs/toolkit';
-import isString from 'lodash-es/isString';
+import isString from 'lodash/isString';
 import React, { createRef, forwardRef, useCallback, useEffect, useImperativeHandle, useState } from 'react';
 
 type Message = React.ReactNode | string;

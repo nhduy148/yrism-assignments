@@ -14,7 +14,7 @@ import {
   Typography,
 } from '@mui/material';
 import { useSelector } from 'app/hooks';
-import { isNil } from 'lodash-es';
+import { isNil } from 'lodash';
 import React from 'react';
 import { Controller, UseFormReturn, useFieldArray, useWatch } from 'react-hook-form';
 import { EmployeeSchema, Position } from 'shared/types';

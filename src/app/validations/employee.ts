@@ -1,4 +1,4 @@
-import { isNil, isString } from 'lodash-es';
+import { isNil, isString } from 'lodash';
 import { EmployeeSchema, PositionSchema, ToolLanguageSchema } from 'shared/types';
 import * as Yup from 'yup';
 

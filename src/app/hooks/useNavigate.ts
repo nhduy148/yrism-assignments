@@ -1,5 +1,5 @@
 import { RouterConfigs } from 'app/config';
-import { fromPairs, isNumber } from 'lodash-es';
+import { fromPairs, isNumber } from 'lodash';
 import { compile } from 'path-to-regexp';
 import { useLocation as useRRLocation, useNavigate as useRRNavigate, type NavigateOptions } from 'react-router-dom';
 

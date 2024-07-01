@@ -9,7 +9,7 @@ import timezone from 'dayjs/plugin/timezone';
 import utc from 'dayjs/plugin/utc';
 
 import { DATE_TIME_FORMAT } from 'app/constants';
-import { isNil } from 'lodash-es';
+import { isNil } from 'lodash';
 
 export const datetime = dayjs;
 

@@ -1,4 +1,4 @@
-import { template } from 'lodash-es';
+import { template } from 'lodash';
 
 export const DEFAULT_REQUIRED_MESSAGE = 'Vui lòng không bỏ trống ô này';
 export const REQUIRED_DISHES = 'Vui lòng chọn món ăn';

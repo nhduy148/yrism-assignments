@@ -2,7 +2,7 @@ import { AddBusiness } from '@mui/icons-material';
 import { Box, Button, Container, Grid, TextField } from '@mui/material';
 import { useSelector } from 'app/hooks';
 import { isNilOrEmpty } from 'app/utils';
-import { isArray } from 'lodash-es';
+import { isArray } from 'lodash';
 import React from 'react';
 import { UseFormReturn, useFieldArray, useWatch } from 'react-hook-form';
 import { EmployeeSchema } from 'shared/types';

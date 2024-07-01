@@ -5,7 +5,7 @@ import { RouterPageKey } from 'app/config';
 import { useNavigate } from 'app/hooks';
 import { deleteEmployee, getEmployeeDetail, updateEmployee } from 'app/services';
 import { employeeSchema } from 'app/validations';
-import { isNil } from 'lodash-es';
+import { isNil } from 'lodash';
 import { useSnackbar } from 'notistack';
 import React from 'react';
 import { SubmitErrorHandler, SubmitHandler, useForm } from 'react-hook-form';

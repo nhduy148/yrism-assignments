@@ -1,8 +1,8 @@
 import { API_URL } from 'app/config';
 import { DEFAULT_PAGINATION_DATA } from 'app/constants';
 import axios, { AxiosResponse } from 'axios';
-import { isArray, isNil } from 'lodash-es';
-import cloneDeep from 'lodash-es/cloneDeep';
+import { isArray, isNil } from 'lodash';
+import cloneDeep from 'lodash/cloneDeep';
 import { compile } from 'path-to-regexp';
 import qs from 'qs';
 import { PaginationResponse } from 'shared/types';

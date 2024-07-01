@@ -2,7 +2,7 @@ import { AddAPhoto } from '@mui/icons-material';
 import { Box, Button, Grid, MenuItem, TextField } from '@mui/material';
 import { DatePicker } from '@mui/x-date-pickers';
 import { datetime } from 'app/utils';
-import { isNil } from 'lodash-es';
+import { isNil } from 'lodash';
 import React from 'react';
 import { Controller, UseFormReturn, useWatch } from 'react-hook-form';
 import { DataImage, DataImageSchema, EmployeeSchema, ToolLanguageResources } from 'shared/types';

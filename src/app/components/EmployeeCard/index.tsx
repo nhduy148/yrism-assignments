@@ -1,9 +1,9 @@
 import DeleteIcon from '@mui/icons-material/Delete';
 import { Card, CardContent, CardMedia, IconButton, Stack, Typography, alpha, styled } from '@mui/material';
 import { useSelector } from 'app/hooks';
-import flatMap from 'lodash-es/flatMap';
-import reduce from 'lodash-es/reduce';
-import uniq from 'lodash-es/uniq';
+import flatMap from 'lodash/flatMap';
+import reduce from 'lodash/reduce';
+import uniq from 'lodash/uniq';
 import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import { Employee } from 'shared/types';
