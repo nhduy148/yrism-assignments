@@ -1,0 +1,9 @@
+{
+	"Description": "Delete employee by id",
+	"Method": "DELETE",
+	"Path": "/api/employees/1",
+	"Response": {
+		"message": "success",
+		"statusCode": 200
+	}
+}

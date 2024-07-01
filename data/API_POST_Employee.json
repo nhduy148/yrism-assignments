@@ -1,0 +1,37 @@
+{
+	"Description": "Create new employee",
+	"Method": "POST",
+	"Path": "/api/employees",
+	"Body": {
+		"contentType": "multipart/form-data",
+		// Json format for easy catchup, please convert to form-data
+		"data": {
+			"name": "John Doe",
+			"positions": [
+			  {
+				"positionResourceId": 1,
+				"displayOrder": 0,
+				"toolLanguages": [
+				  {
+					"toolLanguageResourceId": 1,
+					"displayOrder": 0,
+					"from": 2015,
+					"to": 2022,
+					"description": "description here",
+					"images": [
+					  {
+						"data": "<binary>",
+						"displayOrder": 0
+					  }
+					]
+				  }
+				]
+			  }
+			]
+		  }
+	},
+	"Response": {
+		"message": "success",
+		"statusCode": 200
+	}
+}
