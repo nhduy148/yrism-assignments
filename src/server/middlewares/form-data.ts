@@ -4,7 +4,6 @@ import multipart from 'connect-multiparty';
 import fs from 'fs';
 import fse from 'fs-extra';
 import { onExit } from 'signal-exit';
-
 const formData = {};
 
 function autoClean(files, onExitRemover) {

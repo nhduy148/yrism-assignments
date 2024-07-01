@@ -36,6 +36,18 @@ app.use(morgan('dev'));
 
 app.use(express.static('dist/app'));
 
+app.get('/api', (req, res) => {
+  res.send({ message: 'Welcome to mock-server!' });
+});
+
+app.get('/api/seed', async (req, res) => {
+  await seedDatabase();
+  res.send({ success: true });
+});
+
+app.use('/api/employees', EmployeeController.router);
+app.use('/api/positionResources', PositionResourceController.router);
+
 app.get('*', (_req, res) => {
   res.sendFile(path.join(__dirname, 'app/index.html'));
 });

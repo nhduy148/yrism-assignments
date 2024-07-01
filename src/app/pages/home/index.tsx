@@ -115,9 +115,7 @@ const HomePage = () => {
           <Grid container spacing={2}>
             {employees.map(renderEmployee)}
           </Grid>
-          <Box ref={ref} sx={{ textAlign: 'center', my: 2 }}>
-            {loading && <CircularProgress />}
-          </Box>
+          <Box ref={ref}>{loading && <CircularProgress sx={{ display: 'block', margin: 'auto' }} />}</Box>
         </Box>
       </Paper>
     </Container>

@@ -1,5 +1,5 @@
 import express, { Request, Response } from 'express';
-import reduce from 'lodash-es/reduce';
+import { reduce } from 'lodash';
 import { BaseResponse, Employee, EmployeeSchema, GetEmployeeParams, PaginationResponseData } from 'shared/types';
 import { EMPLOYEE_TABLE, getDb } from '../database';
 
