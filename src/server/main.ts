@@ -5,6 +5,7 @@ import morgan from 'morgan';
 import os from 'os';
 import formData from './middlewares/form-data';
 
+import path from 'path';
 import { EmployeeController } from './controllers/employee.controller';
 import { PositionResourceController } from './controllers/position-resource.controller';
 import { seedDatabase } from './database';
@@ -32,7 +33,12 @@ app.use(express.json());
 app.use(cors());
 
 app.use(morgan('dev'));
-app.use(express.static('public'));
+
+app.use(express.static('dist/app'));
+
+app.get('*', (_req, res) => {
+  res.sendFile(path.join(__dirname, 'app/index.html'));
+});
 
 seedDatabase();
 
